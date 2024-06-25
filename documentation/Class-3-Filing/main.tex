@@ -1,0 +1,206 @@
+\documentclass[12pt]{article}
+\usepackage{times}
+\usepackage[letterpaper, margin=1in]{geometry}
+\usepackage{pdfpages}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{fancyhdr}
+\usepackage{lscape}
+\usepackage{indentfirst}
+\usepackage{cleveref}
+\usepackage{enumitem}
+\fancyhf{}
+\newcommand{\ph}{\framebox[48pt]{\rule{0pt}{12pt}}}
+\begin{document}
+% Title Page
+{\noindent\LARGE\fontfamily{phv}\selectfont High Altitude Class 3 Filing}\newline
+{\noindent\Large\fontfamily{phv}\selectfont Mines Rocket Club}\newline
+
+Document prepared by Tom Powell, with information furnished by:
+\begin{itemize}
+    \item Will Swegles,
+    \item Ashle Jantzen,
+    \item Caleb Mark,
+    \item Andrew Wu
+\end{itemize}
+\clearpage
+% FAA Form 7711
+% To Update: Edit the PDF "media/Form7711.pdf" and print the PDF 
+% to the file "media/FilledForm7711.pdf" and recompile.
+\pagestyle{empty}
+\includepdf[pages={2,3}]{media/FilledForm7711.pdf}
+\clearpage 
+% USGS 7.5 minute topographic quandrangle per directions on 7711.
+\pagestyle{empty}
+\begin{landscape}
+\includepdf[pages=-]{media/primary-ncrnorth.pdf}
+\end{landscape}
+\clearpage
+\pagestyle{fancy}
+\noindent{\Large\fontfamily{phv}\selectfont Supplemental Information for Item 5, FAA Form 7711-2}\newline
+\section{Description of Systems}
+\subsection{Lower Stage (Booster)}
+\subsubsection{Propulsion}
+\begin{enumerate}[label=(\alph*)]
+    \item Ammonium Perchlorate Composite Propellant (APCP); 80\% solids, 10\% Aluminum.
+    \item \ph inches of characterized propellant in \ph diameter \ph type grains; phenolic liner, epoxy bonded grains, assembled per OEM instructions.
+    \item Characteristics
+    \begin{table}[H]
+        % Get this data from running burnsim over an existing motor file.
+        \centering
+        \caption{Motor Characteristics, generated with BurnSim version \ph.}
+        \begin{tabular}{|l|l|l|}
+            \hline
+            Kn: \ph & Max Pc \ph & Volumetric Loading: \ph \\ \hline
+            Web: \ph & Burn Time \ph & Propellant Length: \ph \\ \hline
+            Mass: \ph & Motor Class \ph & Delivered Isp: \ph \\ \hline
+        \end{tabular}
+    \end{table}
+    \item Motor is \ph long, \ph diameter, \ph wall drawn over mandrel (DOM) tubing,
+    OEM supplied composite nozzle with steel retention cap.
+    The motor is retained into the airframe using head end motor retention,
+    no loading from recovery systems is placed on the retainer-motor interface.
+\end{enumerate}
+\subsubsection{Airframe}
+\begin{enumerate}[label=(\alph*)]
+    \item Nominal outer body tube diameter of \ph in, length of \ph in.
+    \item Internal motor retention bulkhead FDM printed from polycarbonate.
+    \item Fins constructed from milled \& routed \ph plate.
+    \item Fillets made with Smooth-On MT-13 pre-thickened epoxy.
+    \item Fin can received \ph layers of \ph layup, with alternating weave directions.
+\end{enumerate}
+\subsubsection{Avionics}
+\begin{enumerate}[label=(\alph*)]
+    \item Motor is ignitied by ground launch control box.
+    \item Altus Metrum TeleMetrum (GPS, Barometric, Accelerometer)
+    \begin{enumerate}[label=(\arabic*)]
+        \item Drives stage separation charge.
+        \item Drives lower stage recovery deployment charge.
+    \end{enumerate}
+    \item Jolly Logic Chute Release
+    \begin{enumerate}[label=(\arabic*)]
+        \item Ejected by recovery deployment charge with both drogue and main parachutes.
+        \item Releases main parachute at \ph feet AGL.
+    \end{enumerate}
+\end{enumerate}
+\subsubsection{Recovery}
+\begin{enumerate}[label=(\alph*)]
+    \item \ph inch drogue parachute. \ph feet per second descent rate.
+    \item \ph inch main parachute. \ph feet per second descent rate.
+\end{enumerate}
+\subsection{Upper Stage (Sustainer)}
+\subsubsection{Propulsion}
+\begin{enumerate}[label=(\alph*)]
+    \item Ammonium Perchlorate Composite Propellant (APCP); 80\% solids, 10\% Aluminum.
+    \item \ph inches of characterized propellant in \ph diameter \ph type grains; phenolic liner, epoxy bonded grains, assembled per OEM instructions.
+    \item Characteristics
+    \begin{table}[H]
+        % Get this data from running burnsim over an existing motor file.
+        \centering
+        \caption{Motor Characteristics, generated with BurnSim version \ph.}
+        \begin{tabular}{|l|l|l|}
+            \hline
+            Kn: \ph & Max Pc \ph & Volumetric Loading: \ph \\ \hline
+            Web: \ph & Burn Time \ph & Propellant Length: \ph \\ \hline
+            Mass: \ph & Motor Class \ph & Delivered Isp: \ph \\ \hline
+        \end{tabular}
+    \end{table}
+    \item Motor is \ph long, \ph diameter, \ph wall drawn over mandrel (DOM) tubing,
+    OEM supplied composite nozzle with steel retention cap.
+    The motor is retained into the airframe using head end motor retention,
+    no loading from recovery systems is placed on the retainer-motor interface.
+\end{enumerate}
+\subsubsection{Airframe}
+\begin{enumerate}[label=(\alph*)]
+    \item Nominal outer body tube diameter of \ph in, length of \ph in.
+    \item Internal motor retention bulkhead FDM printed from polycarbonate.
+    \item Fins constructed from milled \& routed \ph plate.
+    \item Fillets made with Smooth-On MT-13 pre-thickened epoxy.
+    \item Fin can received \ph layers of \ph layup, with alternating weave directions.
+\end{enumerate}
+\subsubsection{Avionics}
+\begin{enumerate}[label=(\alph*)]
+    \item Motor is ignitied by ground launch control box.
+    \item Altus Metrum TeleMetrum (GPS, Barometric, Accelerometer)
+    \begin{enumerate}[label=(\arabic*)]
+        \item Drives stage separation charge.
+        \item Drives lower stage recovery deployment charge.
+    \end{enumerate}
+    \item Jolly Logic Chute Release
+    \begin{enumerate}[label=(\arabic*)]
+        \item Ejected by recovery deployment charge with both drogue and main parachutes.
+        \item Releases main parachute at \ph feet AGL.
+    \end{enumerate}
+\end{enumerate}
+\subsubsection{Recovery}
+\begin{enumerate}[label=(\alph*)]
+    \item \ph inch drogue parachute. \ph feet per second descent rate.
+    \item \ph inch main parachute. \ph feet per second descent rate.
+\end{enumerate}
+\section{Operational Properties}
+\subsection{Site Properties}
+\begin{table}[H]
+    \centering
+    \caption{Launch Site Parameters}
+    \begin{tabular}{|l|l|}
+        \hline
+        Tower Height & \ph in \\ \hline
+        Launch Site Altitude & 5462.6 ft MSL \\ \hline
+        Estimated Landing Site Altitude & 5400 ft MSL \\ \hline
+        Site Longitude & 104$^\circ$ 38.322' W \\ \hline
+        Site Latitude & 40$^\circ$ 53.134' N \\ \hline
+        Typical Site Temperature & \ph \\ \hline
+        Typical Site Pressure & \ph \\ \hline
+    \end{tabular}
+\end{table}
+\subsection{Maximum Altitude and Maximum Range}
+\subsubsection{Methods}
+Highest altitude and maximum range simulations were attained using RASAero version \ph aerodynamic performance data.
+Wind data was collated from observations recorded at the Eaton, CO\footnote{EATON 4.3 ENE, CO US} weather station.
+Resultant collated data was provided to RS-Pro version\ph.
+\begin{table}[H]
+    \centering
+    \caption{Maximum altitude and range.}
+    \label{tab:winds}
+    \begin{tabular}{|p{1in}|p{1in}|p{1in}|p{1in}|p{1in}|p{1in}|}
+        \hline
+        Wind State & Launch Orientation & Booster Altitude & Sustainer Altitude & Booster Range & Sustainer Range \\ \hline
+        No Wind    & \ph                & \ph              & \ph                & \ph           &  \ph \\ \hline
+        Typ. 08:00 Winds    & \ph                & \ph              & \ph                & \ph           & \ph \\ \hline
+        Typ. 12:00 Winds    & \ph                & \ph              & \ph                & \ph           & \ph \\ \hline
+        Typ. 16:00 Winds    & \ph                & \ph              & \ph                & \ph           & \ph \\ \hline
+    \end{tabular}
+\end{table}
+\subsection{Static Stability Characteristics}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|l|l|l|}
+        \hline
+        Mach Number & C.P. (in) & Stability/Static Margin (calibers) \\ \hline
+        0.10        & \ph       &  \ph \\ \hline
+        1.0         & \ph       & \ph \\ \hline
+        2.0         & \ph       & \ph \\ \hline
+        \ph (Max + 5\%)         & \ph       & \ph \\ \hline
+    \end{tabular}
+\end{table}
+\subsection{Dynamic Stability Characteristics}
+\subsection{Mass \& Thrust Characteristics}
+\subsection{$C_p$, $C_n$, and Drag Characteristics}
+\subsection{$C_p$, $C_g$, and Mass Characteristics}
+\subsection{Recovery Dispersion Characteristics}
+For each of the wind states defined in \cref{tab:winds},
+recovery dispersion calculations were run.
+\subsubsection{No Wind}
+\subsubsection{Typ. 08:00 Winds}
+\subsubsection{Typ. 12:00 Winds}
+\subsubsection{Typ. 16:00 Winds}
+\section{Supporting Systems}
+\subsection{Radio Communication}
+To facilitate prompt and resilient communication while on site and performing recovery operations,
+10-watt 2-meter band HAM radios will be used.
+All radios will be operated by persons licensed per 47 CFR 97.503(a).
+
+The telemetry enabled systems onboard the rocket operate on the 70-centimeter HAM band.
+These signals will be received by two offsite 5-element Yagi-Uda antennas with a gain of 6 dbi.
+Each will be equipped with appropriate computer hardware to interpret the signals.
+\end{document}
