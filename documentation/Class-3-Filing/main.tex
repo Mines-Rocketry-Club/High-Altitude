@@ -67,11 +67,11 @@ Document prepared by Tom Powell, with information furnished by:
     \item Internal motor retention bulkhead FDM printed from polycarbonate.
     \item Fins constructed from milled \& routed \ph plate.
     \item Fillets made with Smooth-On MT-13 pre-thickened epoxy.
-    \item Fin can received \ph layers of \ph layup, with alternating weave directions.
+    \item Fin can receives \ph layers of \ph layup, with alternating weave directions.
 \end{enumerate}
 \subsubsection{Avionics}
 \begin{enumerate}[label=(\alph*)]
-    \item Motor is ignitied by ground launch control box.
+    \item Motor is ignited by ground launch control box.
     \item Altus Metrum TeleMetrum (GPS, Barometric, Accelerometer)
     \begin{enumerate}[label=(\arabic*)]
         \item Drives stage separation charge.
@@ -116,11 +116,11 @@ Document prepared by Tom Powell, with information furnished by:
     \item Internal motor retention bulkhead FDM printed from polycarbonate.
     \item Fins constructed from milled \& routed \ph plate.
     \item Fillets made with Smooth-On MT-13 pre-thickened epoxy.
-    \item Fin can received \ph layers of \ph layup, with alternating weave directions.
+    \item Fin can receives \ph layers of \ph layup, with alternating weave directions.
 \end{enumerate}
 \subsubsection{Avionics}
 \begin{enumerate}[label=(\alph*)]
-    \item Motor is ignitied by ground launch control box.
+    \item Motor is ignited by ground launch control box.
     \item Altus Metrum TeleMetrum (GPS, Barometric, Accelerometer)
     \begin{enumerate}[label=(\arabic*)]
         \item Drives stage separation charge.
@@ -183,24 +183,149 @@ Resultant collated data was provided to RS-Pro version\ph.
         \ph (Max + 5\%)         & \ph       & \ph \\ \hline
     \end{tabular}
 \end{table}
+% Refer to the example document for what to include in these plots.
 \subsection{Dynamic Stability Characteristics}
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\textwidth]{media/dynstab.png}
+    \caption{Dynamic stability properties of the system.}
+\end{figure}
 \subsection{Mass \& Thrust Characteristics}
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\textwidth]{media/massthrust.png}
+    \caption{Mass and thrust properties of the system.}
+\end{figure}
 \subsection{$C_p$, $C_n$, and Drag Characteristics}
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\textwidth]{media/aero1.png}
+    \caption{Aerodynamic properties of the system.}
+\end{figure}
 \subsection{$C_p$, $C_g$, and Mass Characteristics}
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\textwidth]{media/aero2.png}
+    \caption{Continued aerodynamic properties of the system.}
+\end{figure}
 \subsection{Recovery Dispersion Characteristics}
 For each of the wind states defined in \cref{tab:winds},
 recovery dispersion calculations were run.
 \subsubsection{No Wind}
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\textwidth]{media/nowind.png}
+    \caption{Recovery dispersion with no wind.}
+\end{figure}
 \subsubsection{Typ. 08:00 Winds}
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\textwidth]{media/0800wind.png}
+    \caption{Recovery dispersion with wind typical to 08:00 on the site.}
+\end{figure}
 \subsubsection{Typ. 12:00 Winds}
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\textwidth]{media/1200wind.png}
+    \caption{Recovery dispersion with wind typical to 12:00 on the site.}
+\end{figure}
 \subsubsection{Typ. 16:00 Winds}
+\begin{figure}
+    \centering
+    \includegraphics[width=.8\textwidth]{media/1600wind.png}
+    \caption{Recovery dispersion with wind typical to 16:00 on the site.}
+\end{figure}
+\subsubsection{1-$\sigma$ RS-Pro Uncertainties}
+\paragraph{Mass Properties}
+\begin{table}[H]
+    \centering
+    \caption{RS-Pro mass property uncertainty}
+    \begin{tabular}{|l|l|}
+        \hline
+        Mass & \ph\% \\ \hline
+        Moments of Inertia & \ph \\ \hline
+        Center of Gravity & \ph \\ \hline
+    \end{tabular}
+\end{table}
+\paragraph{Aerodynamics}
+\begin{table}[H]
+    \centering
+    \caption{RS-Pro aerodynamics uncertainty}
+    \begin{tabular}{|l|l|}
+        \hline
+        $C_a$ & \ph \% \\ \hline
+        $C_n$ & \ph \% \\ \hline
+        CP & \ph cal \% \\ \hline
+        Fin Cant & \ph$^\circ$ \\ \hline
+    \end{tabular}
+\end{table}
+\paragraph{Propulsion}
+\begin{table}[H]
+    \centering
+    \caption{Rs-Pro Propulsion uncertainty}
+    \begin{tabular}{|l|l|}
+        \hline
+        Total Impulse & \ph \% \\ \hline
+        Propellant & \ph \% \\ \hline
+        Thrust Axis & \ph $^\circ$ \\ \hline
+    \end{tabular}
+\end{table}
+\paragraph{Wind}
+\begin{table}[H]
+    \centering
+    \caption{RS-Pro wind uncertainty}
+    \begin{tabular}{|l|l|}
+        \hline
+        Direction & \ph $^\circ$ \\ \hline
+        Velocity & \ph fps \\ \hline
+    \end{tabular}
+\end{table}
+\paragraph{Launch Rail}
+\begin{table}[H]
+    \centering
+    \caption{RS-Pro launch rail uncertainty}
+    \begin{tabular}{|l|l|}
+        \hline
+        Azimuth & \ph $^\circ$ \\ \hline
+        Elevation & \ph $^\circ$ \\ \hline
+    \end{tabular}
+\end{table}
+\paragraph{Failure Likelihood}
+\begin{table}[H]
+    \centering
+    \caption{RS-Pro failure likelihood factors.}
+    \begin{tabular}{|l|l|}
+        \hline
+        Ignition & \ph \% \\ \hline
+        C.A.T.O. & \ph \% \\ \hline
+        Deployment & \ph \% \\ \hline
+        Chute Failure & \ph \% \\ \hline
+    \end{tabular}
+\end{table}
 \section{Supporting Systems}
 \subsection{Radio Communication}
 To facilitate prompt and resilient communication while on site and performing recovery operations,
 10-watt 2-meter band HAM radios will be used.
 All radios will be operated by persons licensed per 47 CFR 97.503(a).
+All radios may be operated in a mode to comply with 47 CFR 95.531 through 47 CFR 95.587 for use on FRS channels.
 
 The telemetry enabled systems onboard the rocket operate on the 70-centimeter HAM band.
 These signals will be received by two offsite 5-element Yagi-Uda antennas with a gain of 6 dbi.
 Each will be equipped with appropriate computer hardware to interpret the signals.
+\section{Safety Procedures}
+\begin{enumerate}[label=(\alph*)]
+    \item Range safety, pre-, during- and post-launch checklists will be used.
+    \item Event operators will be alerted to all actions.
+    \item The team will communicate readiness to launch to the Launch Control Officer,
+    who will provide setup instructions and decide the order of launches.
+    \item The Launch Control Officer will alert event attendees via a public address system.
+\end{enumerate}
+\section{Mishap and Emergency Procedures \& Facilities}
+\begin{enumerate}[label=(\alph*)]
+    \item Basic first aid available on site.
+    \item Nearest hospital located in \ph, \ph miles away.
+    \item Nearest fire and rescue located in \ph, \ph miles away.
+    \item Procedures and provisions for extinguishing fires initiated by motor ignition are present on site per agreement with the Forest Service.
+
+\end{enumerate}
 \end{document}

@@ -1,0 +1,4 @@
+{"rule":"MORFOLOGIK_RULE_EN_US","sentence":"^\\QTyp.\\E$"}
+{"rule":"CANT","sentence":"^\\QRS-Pro aerodynamics uncertainty \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q % \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q % CP cal % Fin Cant \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q Propulsion.\\E$"}
+{"rule":"COMMA_PARENTHESIS_WHITESPACE","sentence":"^\\QNearest hospital located in , miles away.\\E$"}
+{"rule":"ENGLISH_WORD_REPEAT_BEGINNING_RULE","sentence":"^\\QRS-Pro failure likelihood factors.\\E$"}
